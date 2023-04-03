@@ -45,7 +45,7 @@ while count!=9:
     if count % 2 == 0:
         InputO()
         time.sleep(1)
-        os.system("cls")
+        os.system('cls' if os.name == 'nt' else 'clear')
         TicTacToe()
         if count>=4 :
             if ((list[0] == list[1] == list[2] and list[0] != ' ') or (
@@ -63,7 +63,7 @@ while count!=9:
     else:
         InputX()
         time.sleep(1)
-        os.system("cls")
+        os.system('cls' if os.name == 'nt' else 'clear')
         TicTacToe()
         if count>=4 :
             if ((list[0] == list[1] == list[2] and list[0] != ' ') or (
